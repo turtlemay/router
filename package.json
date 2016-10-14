@@ -1,0 +1,31 @@
+{
+  "name": "@turtlemay/router",
+  "version": "0.0.1",
+  "description": "Minimal client-side router with history.",
+  "author": {
+    "name": "turtlemay",
+    "email": "turtlemay@me.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turtlemay/router.git"
+  },
+  "keywords": [
+    "typescript",
+    "typings",
+    "es6",
+    "es2015",
+    "client-side",
+    "router",
+    "history",
+    "pushState",
+    "regex"
+  ],
+  "files": [
+    "src/index.js",
+    "src/index.d.ts"
+  ],
+  "main": "src/index.js",
+  "typings": "src/index.d.ts",
+  "license": "MIT"
+}
