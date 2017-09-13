@@ -28,6 +28,9 @@
   "main": "out/index.js",
   "typings": "out/index.d.ts",
   "license": "MIT",
+  "scripts": {
+    "start": "tsc -w"
+  },
   "devDependencies": {
     "typescript": "^2.5.2"
   }
