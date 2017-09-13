@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "outDir": "out",
     "declaration": true,
     "sourceMap": true,
     "noImplicitAny": true,
@@ -9,6 +10,7 @@
     "noUnusedParameters": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "out"
   ]
 }
