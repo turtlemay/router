@@ -27,5 +27,8 @@
   ],
   "main": "src/index.js",
   "typings": "src/index.d.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.5.2"
+  }
 }
