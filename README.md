@@ -9,8 +9,8 @@ npm install @turtlemay/router
 Import or require the module:
 
 ```javascript
-// import * as router from '@turtlemay/router';
-const router = require('@turtlemay/router');
+// import * as router from '@turtlemay/router'
+const router = require('@turtlemay/router')
 ```
 
 Start the router, passing a config containing your route definitions:
@@ -27,22 +27,22 @@ router.start({
       // Define a route match callback.
       // Your capture groups are passed as function arguments.
       onMatched: myArg1 => {
-        console.log(`Matched route #/foo/${myArg1}.`);
+        console.log(`Matched route #/foo/${myArg1}.`)
         // Update your app state.
       },
 
       // You can also define a callback for when the route was not matched.
       onNotMatched: () => {
-        console.log('Route #/foo not matched.');
+        console.log('Route #/foo not matched.')
         // Update your app state.
       },
     },
   ],
-});
+})
 ```
 
 Navigate to a route:
 
 ```javascript
-router.navigate('#/foo/bar');
+router.navigate('#/foo/bar')
 ```
