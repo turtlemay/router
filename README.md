@@ -22,7 +22,7 @@ router.start({
       // Define your route using a regex.
       // Use capture groups for parameters.
       // We begin with a hash mark and define one capture group.
-      regExp: /#\/foo\/(.+)/i,
+      regExp: /^#\/foo\/(.+)$/i,
 
       // Define a route match callback.
       // Your capture groups are passed as function arguments.
