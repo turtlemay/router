@@ -43,7 +43,7 @@ function processRoute(routePath: string) {
     if (match && route.onMatched) {
       match.shift()
       route.onMatched.apply(null, match)
-      return
+      continue
     }
     if (route.onNotMatched) route.onNotMatched()
   }
