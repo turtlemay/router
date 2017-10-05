@@ -1,16 +1,24 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "outDir": "out",
+    "target": "esnext",
+    "outDir": "./dist",
     "declaration": true,
     "sourceMap": true,
-    "noImplicitAny": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "allowUnusedLabels": false,
+    "allowSyntheticDefaultImports": false,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true
   },
-  "exclude": [
-    "node_modules",
-    "out"
+  "include": [
+    "./src"
   ]
 }

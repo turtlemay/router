@@ -1,48 +1,35 @@
 ### Installation
 
-```bash
+```
 npm install @turtlemay/router
 ```
 
-### Usage
-
-Import or require the module:
+### Basic Usage
 
 ```javascript
-// import * as router from '@turtlemay/router'
-const router = require('@turtlemay/router')
+import * as router from '@turtlemay/router'
 ```
 
-Start the router, passing a config containing your route definitions:
+Define routes and middleware:
 
 ```javascript
-router.start({
-  routes: [
-    {
-      // Define your route using a regex.
-      // Use capture groups for parameters.
-      // We begin with a hash mark and define one capture group.
-      regExp: /^#\/foo\/(.+)$/i,
-
-      // Define a route match callback.
-      // Your capture groups are passed as function arguments.
-      onMatched: myArg1 => {
-        console.log(`Matched route #/foo/${myArg1}.`)
-        // Update your app state.
-      },
-
-      // You can also define a callback for when the route was not matched.
-      onNotMatched: () => {
-        console.log('Route #/foo not matched.')
-        // Update your app state.
-      },
-    },
-  ],
+// Define routes using regex.
+router.use(/^\/$/, (req, res, next) => {
+  console.assert(req.path === '/')
+  next()
 })
 ```
 
-Navigate to a route:
+Start event listeners and handle the initial route:
 
 ```javascript
-router.navigate('#/foo/bar')
+router.start()
 ```
+
+Request a path:
+
+```javascript
+router.navigate('/foo')
+```
+
+See [example](./example) for complete usage.
