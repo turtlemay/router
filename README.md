@@ -3,7 +3,7 @@
 Import as a native browser module:
 
 ```javascript
-import * as router from 'https://cdn.jsdelivr.net/npm/@turtlemay/router/dist/index.js'
+import * as router from 'https://cdn.jsdelivr.net/npm/@turtlemay/router'
 ```
 
 Or use the package in your module bundler of choice:
