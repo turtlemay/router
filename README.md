@@ -1,14 +1,22 @@
 ### Installation
 
-```
-npm install @turtlemay/router
+Import as a native browser module:
+
+```javascript
+import * as router from 'https://cdn.jsdelivr.net/npm/@turtlemay/router/dist/index.js'
 ```
 
-### Basic Usage
+Or use the package in your module bundler of choice:
+
+```
+npm i -D @turtlemay/router
+```
 
 ```javascript
 import * as router from '@turtlemay/router'
 ```
+
+### Basic Usage
 
 Define routes and middleware:
 
